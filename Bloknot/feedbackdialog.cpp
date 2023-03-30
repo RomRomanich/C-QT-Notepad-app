@@ -22,7 +22,7 @@ void FeedbackDialog::sendFeedback() {
     // Get the user's feedback and it via email
     QString feedback = feedbackEdit->toPlainText();
     QString subject = "Notepad Feedback";
-    QString recipient = "shukrullo.coder@gmail.com";
+    QString recipient = "adress@gmail.com";
     QString body = feedback;
     QString mailto = QString("mailto:%1?subject=%2&body=%3").arg(recipient, subject, body);
     QDesktopServices::openUrl(QUrl(mailto));
