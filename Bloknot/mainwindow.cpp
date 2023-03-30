@@ -491,10 +491,10 @@ void MainWindow::action_view_help() {
     QString text = "Need Help?\n"
                    "Something wrong happened?\n"
                    "Feel free to reach to me.\n"
-                   "Telegram: @jumanazarov_shukrullo";
+                   "Telegram: @xxxxxx";
     QMessageBox::StandardButton button = QMessageBox::question(this, "Help", text);
     if (button == QMessageBox::Yes) {
-        QDesktopServices::openUrl(QUrl("https://t.me/jumanazarov_shukrullo"));
+        QDesktopServices::openUrl(QUrl("https://t.me/--------"));
     } else {
         return;
     }
@@ -504,10 +504,7 @@ void MainWindow::action_send_feedback(){
     dialog->exec();
 }
 void MainWindow::action_about_notepad() {
-    QString text = "Linux Notepad is a simple text editor for Linux.\n"
-                   "It creates and edits plain text documents.\n"
-                   "First released in 2023, no commercial use.\n"
-                   "Notepad has been part of every version of Linux ever since.\n"
-                   "Creator: Shukrullo\n";
+    QString text = "First released in 2023, no commercial use.\n"
+                   "Notepad has been part of every version of Linux ever since.\n";
     QMessageBox::information(this, "About Notepad", text);
 }
